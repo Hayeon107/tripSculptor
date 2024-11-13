@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:tripdraw/View/NewProject/choosePurpose.dart';
+import 'package:tripdraw/NewProject_ver2/inputInfo.dart';
+import 'package:tripdraw/View/Storyboard_dynamic/companionView.dart';
 import 'package:tripdraw/style.dart' as style;
 
-import '../View/NewProject/chooseCompanionView.dart';
 
 class NewProjectWidget extends StatelessWidget {
   NewProjectWidget({super.key});
@@ -13,8 +13,7 @@ class NewProjectWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Get.to(() => ChoosePurposeView());
-        // Get.to(() => ChooseCompanionView());
+        Get.to(() => CompanionView());
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 15.h),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:tripdraw/View/NewProject/chooseLocationView3.dart';
-import 'package:tripdraw/View/Storyboard/storyboardDetailView.dart';
 import './style.dart' as myStyle;
 import 'NewProject_ver2/inputInfo.dart';
+import 'NewProject_ver2/storyTextGenerationView.dart';
+import 'View/Storyboard_dynamic/companionView.dart';
 import 'View/mainView.dart';
 void main() {
   runApp(MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         title: 'TripSketch',
         debugShowCheckedModeBanner: false,
         theme: myStyle.theme,
-        home: InputInfoView(),
+        home: MainView(),
       ),
     );
   }

@@ -13,7 +13,7 @@ var textTheme = TextTheme(
   titleSmall: TextStyle(fontSize: 16.sp, fontFamily: 'NotoSansCJK',color: Colors.black),
 
   headlineMedium: TextStyle(fontSize: 15.sp,fontFamily: 'NotoSansCJK',color: Colors.white),
-  displaySmall: TextStyle(fontSize: 13.sp, fontFamily: 'NotoSansCJK',color: basicGray),
+  displaySmall: TextStyle(fontSize: 10.sp, fontFamily: 'NotoSansCJK',color: basicGray),
   displayMedium: TextStyle(fontSize: 15.sp, fontFamily: 'NotoSansCJK',color: basicGray),
   displayLarge: TextStyle(fontSize: 18.sp, fontFamily: 'NotoSansCJK',fontWeight: FontWeight.w600,color: basicGray,),
   labelLarge: TextStyle(fontSize: 13.sp, fontFamily: 'NotoSansCJK',fontStyle: FontStyle.normal),

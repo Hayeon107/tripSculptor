@@ -24,8 +24,8 @@ class _CustomBottomState extends State<CustomBottom> {
           label: '아카이브',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: '홈',
+          icon: Icon(Icons.add),
+          label: '새 프로젝트',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.settings),

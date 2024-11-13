@@ -5,12 +5,13 @@ import 'package:tripdraw/Widget/newProjectWidget.dart';
 import 'package:tripdraw/style.dart' as style;
 import '../../data/stroyboard_data.dart';
 import '../Widget/storyboardArchiveTile.dart';
+import 'package:lottie/lottie.dart';
 
 class HomeView extends StatelessWidget {
   HomeView({super.key});
+
   // 샘플 데이터 생성
-  final List<String> items =
-  List<String>.generate(2, (index) => 'Item $index');
+  final List<String> items = List<String>.generate(2, (index) => 'Item $index');
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +19,13 @@ class HomeView extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 10.w),
       child: Column(
         children: [
+          Expanded(
+            child: Lottie.asset(
+              'assets/Animation - 1731031590663.json', // 원하는 가로 크기
+              height: 500, // 원하는 세로 크기
+              fit: BoxFit.fill,
+            ),
+          ),
           NewProjectWidget(),
           Flexible(
             flex: 2,
@@ -39,7 +47,7 @@ class HomeView extends StatelessWidget {
                     itemCount: 4,
                     itemBuilder: (context, index) {
                       return Container(
-                        color: Colors.green,
+                        color: Colors.grey,
                         child: Center(
                           child: Text(
                             'Item $index',
@@ -67,8 +75,10 @@ class HomeView extends StatelessWidget {
                     itemCount: items.length, // 항목의 개수를 정의
                     itemBuilder: (context, index) {
                       final storyboard = storyboards[index];
-                      return  StoryBoardArchiveTile(
-                        title: storyboard.title, date: storyboard.createdAt, destination: storyboard.destination,
+                      return StoryBoardArchiveTile(
+                        title: storyboard.title,
+                        date: storyboard.createdAt,
+                        destination: storyboard.destination,
                       );
                     },
                   ),
